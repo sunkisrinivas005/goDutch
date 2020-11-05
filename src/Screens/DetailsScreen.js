@@ -80,8 +80,7 @@ const DetailsScreen = ({navigation}) => {
                   alignItems: 'center',
                   borderColor: type === 'Student' ? '#5a67f2' : 'grey',
                   height: 30,
-                }}
-                onPress={() => setType('Student')}>
+                }}>
                 <Text
                   style={{
                     alignSelf: 'center',
@@ -91,7 +90,8 @@ const DetailsScreen = ({navigation}) => {
                     padding: 2,
                     fontWeight: 'bold',
                     color: type === 'Student' ? '#5a67f2' : 'black',
-                  }}>
+                  }}
+                  onPress={() => setType('Student')}>
                   Student
                 </Text>
               </View>
